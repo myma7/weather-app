@@ -19,6 +19,7 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     padding: 10px;
+    color:#9c3d80
 }
 
 input {
@@ -68,7 +69,9 @@ button:hover {
 
 .bottom {
     height: 140px;
+    cursor: pointer;
 }
+
 
 .main-info {
     display: flex;
@@ -78,6 +81,7 @@ button:hover {
 }
 
 .city-name {
+    display: flex;
     font-size: 40px;
 }
 
@@ -116,4 +120,47 @@ button:hover {
     margin-top: 10px;
     font-size: 14px;
     color: tomato;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .wrapper {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .city-name {
+        padding: 2px;
+        font-size: 20px;
+    }
+
+    .headings p,
+    .weather-info p {
+        font-size: 12px;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .photo {
+        padding: 20px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .main-info {
+        height: auto;
+        flex-direction: column;
+    }
+
+    button {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    input::placeholder {
+        font-size: 12px;
+    }
 }
